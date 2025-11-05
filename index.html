@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Currency</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <div class="container">
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search By Name or Symbol" />
+      <button id="sortMarketCapBtn">Sort By Mkt Cap</button>
+      <button id="sortChangeBtn">Sort by Percentage</button>
+    </div>
+
+    <div id="cryptoList" class="crypto-list"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
